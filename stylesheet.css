@@ -231,13 +231,17 @@ footer {
     position: fixed;
     top: 10%;
     left: 20px;
-    width: 200px; /* daha dar */
-    background: linear-gradient(180deg, #d0d0d6 0%, #d6d9e8 100%); /* daha dengeli gri → açık ton */
-    padding: 14px; /* daha az padding */
+    width: 200px;
+    /* daha dar */
+    background: linear-gradient(180deg, #d0d0d6 0%, #d6d9e8 100%);
+    /* daha dengeli gri → açık ton */
+    padding: 14px;
+    /* daha az padding */
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     font-family: 'Inter', sans-serif;
-    font-size: 0.85rem; /* metin boyutu küçültüldü */
+    font-size: 0.85rem;
+    /* metin boyutu küçültüldü */
 }
 
 .sidebar ul {
@@ -247,24 +251,32 @@ footer {
 }
 
 .sidebar li {
-    margin: 10px 0; /* aralık daraltıldı */
+    margin: 10px 0;
+    /* aralık daraltıldı */
 }
 
 .sidebar a {
     text-decoration: none;
     color: #1f1f1f;
-    font-weight: 500; /* daha hafif ama okunaklı */
+    font-weight: 500;
+    /* daha hafif ama okunaklı */
     display: block;
-    padding: 6px 10px; /* daha kompakt link alanı */
+    padding: 6px 10px;
+    /* daha kompakt link alanı */
     border-radius: 5px;
-    transition: all 0.6s ease; /* yavaş ve akıcı geçiş */
+    transition: all 0.6s ease;
+    /* yavaş ve akıcı geçiş */
 }
 
 .sidebar a:hover {
-    background: rgba(255,255,255,0.3); /* hover’da hafif parlama */
-    color: #0a84ff; /* modern mavi vurgu */
-    transform: translateX(5px); /* daha zarif kayma */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* hover’da hafif gölge */
+    background: rgba(255, 255, 255, 0.3);
+    /* hover’da hafif parlama */
+    color: #0a84ff;
+    /* modern mavi vurgu */
+    transform: translateX(5px);
+    /* daha zarif kayma */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    /* hover’da hafif gölge */
 }
 
 .content {
@@ -275,7 +287,7 @@ footer {
 
 /* --- Mobil ve Tablet Uyumluluk Ayarları (768px ve Altı) --- */
 @media (max-width: 768px) {
-    
+
     /* 1. Sidebar'ı Gizle */
     .sidebar {
         display: none !important;
@@ -285,24 +297,28 @@ footer {
     .container {
         margin-left: auto !important;
         margin-right: auto !important;
-        width: 92% !important; /* Kenarlarda hafif nefes payı bırakır */
+        width: 92% !important;
+        /* Kenarlarda hafif nefes payı bırakır */
         padding: 10px;
         max-width: 100%;
     }
 
     /* 3. Grid Yapısını Tek Sütuna Düşür */
-    .grid, .feature-grid {
+    .grid,
+    .feature-grid {
         grid-template-columns: 1fr !important;
         gap: 15px;
     }
 
     /* 4. Başlık ve Metin Boyutlarını Optimize Et */
     header {
-        padding: 40px 0; /* Header yüksekliğini daralt */
+        padding: 40px 0;
+        /* Header yüksekliğini daralt */
     }
 
     h1 {
-        font-size: 1.6rem !important; /* Mobilde daha okunaklı boyut */
+        font-size: 1.6rem !important;
+        /* Mobilde daha okunaklı boyut */
         line-height: 1.2;
     }
 
@@ -314,14 +330,17 @@ footer {
     .table-container {
         display: block;
         width: 100%;
-        overflow-x: auto; /* Yatay kaydırma çubuğu ekler */
-        -webkit-overflow-scrolling: touch; /* iOS için akıcı kaydırma */
+        overflow-x: auto;
+        /* Yatay kaydırma çubuğu ekler */
+        -webkit-overflow-scrolling: touch;
+        /* iOS için akıcı kaydırma */
         border: 1px solid #e2e8f0;
         border-radius: 8px;
     }
 
     .data-table {
-        min-width: 600px; /* Tablo içeriğinin birbirine girmesini engeller */
+        min-width: 600px;
+        /* Tablo içeriğinin birbirine girmesini engeller */
         font-size: 0.85rem;
     }
 
