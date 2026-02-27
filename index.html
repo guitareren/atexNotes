@@ -11,18 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
+
+<header>
+    <div class="container">
+        <span class="badge">Teknik Standart Özeti</span>
+        <h1>EN 60079-11 Standardı</h1>
+        <p class="subtitle">PCB Tasarımı İçin İçsel Güvenlik (Ex i) Gereklilikleri</p>
+    </div>
+</header>
+
+
 <body>
 
-    <header>
-        <div class="container">
-            <span class="badge">Teknik Standart Özeti</span>
-            <h1>EN 60079-11 Standardı</h1>
-            <p class="subtitle">PCB Tasarımı İçin İçsel Güvenlik (Ex i) Gereklilikleri</p>
+    <section class="card">
+        <div class="layout">
+            <!-- Sol tarafta sabit menü -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#section1">🔹 Genel Tanım</a></li>
+                    <li><a href="#section2">🔹 Test Gereklilikleri</a></li>
+                    <li><a href="#section3">🔹 Belgelendirme Süreci</a></li>
+                    <li><a href="#section4">🔹 Teknik Parametreler ve Sınır Değerler</a></li>
+                    <li><a href="#section5">🔹 Enerji Hesaplama Formülleri ve Limitler</a></li>
+                    <li><a href="#section6">🔹 Örnek PCB Enerji Hesaplaması</a></li>
+                    <li><a href="#section7">🔹 ATEX İçin PCB Kaplama Gereklilikleri</a></li>
+                    <li><a href="#section8">🔹 TS EN 60079 Tam Seri</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </section>
 
     <main class="container">
-        <section class="card">
+        <section class="card" id="section1">
             <h2><span class="icon">📘</span> 1. Genel Tanım</h2>
             <div class="grid">
                 <div class="info-box">
@@ -66,7 +86,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="section2">
             <h2><span class="icon">🧪</span> 3. Test Gereklilikleri</h2>
             <ul class="test-list">
                 <li><strong>Fonksiyonel Testler:</strong> Normal ve arıza simülasyonları ile doğrulama.</li>
@@ -76,7 +96,7 @@
             </ul>
         </section>
 
-        <section class="card highlight">
+        <section class="card highlight" id="section3">
             <h2><span class="icon">📜</span> 4. Belgelendirme Süreci</h2>
             <div class="step">
                 <strong>Teknik Dosya:</strong> Tüm hesaplamalar, BOM listesi ve malzeme sertifikaları.
@@ -89,7 +109,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="section4">
             <h2><span class="icon">📊</span> Teknik Parametreler ve Sınır Değerler</h2>
             <div class="table-container">
                 <table class="data-table">
@@ -187,7 +207,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="section5">
             <h2><span class="icon">📊</span> Enerji Hesaplama Formülleri ve Limitler</h2>
             <div class="table-container">
                 <table class="data-table">
@@ -286,7 +306,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="section6">
             <h2><span class="icon">🧮</span> Örnek PCB Enerji Hesaplaması</h2>
             <div class="table-container">
                 <table class="data-table">
@@ -361,7 +381,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="section7">
             <h2><span class="icon">🛡️</span> ATEX İçin PCB Kaplama Gereklilikleri</h2>
             <div class="table-container">
                 <table class="data-table">
@@ -420,14 +440,15 @@
                     </li>
                     <li><strong>Silikon</strong> geniş sıcaklık aralığında esnektir, <strong>Epoksi</strong> ise en
                         dayanıklı seçenektir.</li>
-                    <li>Kaplama kalınlığı genellikle 25–200 µm arasında değişir ve <strong>antistatik özellikler</strong> eklenmelidir.
+                    <li>Kaplama kalınlığı genellikle 25–200 µm arasında değişir ve <strong>antistatik
+                            özellikler</strong> eklenmelidir.
                     </li>
                 </ul>
                 <p>Bu tablo, ATEX sertifikalı cihazlarda PCB kaplaması için uygun malzeme ve yöntemleri özetler.</p>
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" id="section8">
             <h2><span class="icon">🏗️</span> TS EN 60079 Tam Seri: Tasarımdan Sahaya Uygulama Rehberi</h2>
             <div class="table-container">
                 <table class="data-table">
@@ -585,11 +606,13 @@
             <div class="table-footer-note">
                 <h3>🔑 Teknik Özet ve Tasarım Stratejisi:</h3>
                 <ul>
-                    <li><strong>Cihaz Tasarımı:</strong> 0, 7, 11 ve 18 numaralı standartlar PCB tasarımcısının en çok ihtiyaç duyduğu dökümandır.</li>
+                    <li><strong>Cihaz Tasarımı:</strong> 0, 7, 11 ve 18 numaralı standartlar PCB tasarımcısının en çok
+                        ihtiyaç duyduğu dökümandır.</li>
                     <li><strong>Sistem Entegrasyonu:</strong> 14 ve 25 numaralı standartlar, cihazın diğer cihazlarla
                         nasıl "konuşacağını" belirler.</li>
                     <li><strong>Mekanik vs. Elektrik:</strong> Gaz sayaçlarında artık sadece elektrikli parçalar değil,
-                        <strong>ISO 80079-36</strong> uyarınca dönen mekanik aksam da sertifikalandırılmalıdır.</li>
+                        <strong>ISO 80079-36</strong> uyarınca dönen mekanik aksam da sertifikalandırılmalıdır.
+                    </li>
                 </ul>
                 <p><strong>Not:</strong> 60079-40 gibi yeni standartlar, özellikle gaz sızıntısının kablo kanalları
                     üzerinden kontrol odasına ulaşmasını engelleyen "Process Sealing" konusuna odaklanır.</p>
