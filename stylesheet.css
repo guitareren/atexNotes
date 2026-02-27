@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #334155;
+    --accent-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.badge {
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 15px 0 5px;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background: #eff6ff;
+    padding: 15px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.test-list {
+    list-style: none;
+    padding: 0;
+}
+
+.test-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--accent-color);
+}
+
+.test-list li:last-child {
+    border-bottom: none;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+}
+
+.highlight h2 {
+    color: white;
+    border-color: #475569;
+}
+
+.step {
+    margin: 15px 0;
+    padding-left: 20px;
+    border-left: 2px solid var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Tablo Tasarımı */
+.table-container {
+    overflow-x: auto;
+    /* Mobilde tablonun kaydırılabilmesini sağlar */
+    margin-top: 20px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    text-align: left;
+    min-width: 600px;
+    /* Tablonun çok sıkışmasını önler */
+}
+
+.data-table thead tr {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+}
+
+.data-table tbody tr:nth-of-type(even) {
+    background-color: #f1f5f9;
+    /* Satırları ayırt etmek için zebra deseni */
+}
+
+.data-table tbody tr:hover {
+    background-color: #e2e8f0;
+    /* Üzerine gelindiğinde vurgu */
+    transition: background-color 0.2s ease;
+}
+
+/* Tablo başlıklarının mobilde daha iyi görünmesi için */
+.data-table th {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+/* Tablo Altı Özet Notu Stili */
+.table-footer-note {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid var(--primary-color);
+}
+
+.table-footer-note h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-footer-note ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.table-footer-note ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.table-footer-note ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.table-footer-note p {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
