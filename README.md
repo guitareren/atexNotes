@@ -1,2 +1,2 @@
 # atexNotes
-Atex hakkında TR notlarım
+https://guitareren.github.io/atexNotes/
